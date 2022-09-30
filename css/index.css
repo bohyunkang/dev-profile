@@ -462,3 +462,55 @@ footer {
 
   text-align: center;
 }
+
+/* mobile */
+@media (max-width: 1023px) {
+  #header {
+    flex-direction: column;
+
+    height: 24vw;
+
+    background-color: #fff;
+  }
+
+  #header .logo {
+    display: block;
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--gray-color);
+  }
+
+  #header .logo h1 {
+    font-size: 5.2vw;
+    font-weight: 600;
+
+    padding: 4.4vw 4vw;
+
+    letter-spacing: -0.3vw;
+  }
+
+  #header nav .navigation {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  #header nav .navigation li {
+    width: 33.3vw;
+  }
+
+  #header nav .navigation li:last-child {
+    position: absolute;
+    top: 3.5vw;
+    right: 0;
+  }
+
+  #header nav .navigation li a {
+    border-radius: 7vw;
+    width: 28.5vw;
+  }
+
+  #header nav .navigation li .contact {
+    text-align: center;
+  }
+}
