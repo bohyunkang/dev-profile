@@ -49,6 +49,8 @@ body {
 
   background-color: #ffffff;
   border-bottom: 1px solid var(--gray-color);
+
+  z-index: 10;
 }
 
 #header .logo h1 {
@@ -422,6 +424,31 @@ body {
 }
 #contact-me .sns .youtube a {
   background-image: url('../images/youtube.png');
+}
+
+/* go-to-top */
+aside .go-to-top {
+  position: fixed;
+  bottom: 15%;
+  right: 5%;
+
+  display: block;
+  width: 3.7em;
+  height: 3.7em;
+
+  background: url('../images/top-green.png') no-repeat 0 0;
+  background-size: contain;
+  text-indent: -10000px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+aside .go-to-top:hover {
+  background-image: url('../images/top-white.png');
+}
+
+aside .go-to-top:active {
+  background-image: url('../images/top-green.png');
 }
 
 /* footer */
